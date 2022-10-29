@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-bg: #E0D9E4;
+    --color0: #F0D9FF;
+    --color1: #BFA2DB;
+    --color2: #7F7C82;
+
+    --main-color: var(--color-bg);
+    --text-color: #242424;
+    --bg-color: var(--color-bg);
+}
+
+body {
+    background: var(--color-bg);
+}
+
+.content {
+    margin: auto;
+    width: 1215px;
+    margin-top: 15px;
+}
+
+.topbar {
+    width: 100%;
+    background: var(--color2);
+    height: 75px;
+    margin-top: 0px;
+    padding-top: 0%;
+}
+
+.sidebar {
+    width: 300px;
+    background: white;
+    color: #242424;
+}
+
+.sidebar header {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 60px;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    color:#242424;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+ul li:hover a {
+    color: black;
+}
+
+.right {
+    position: absolute;
+    left: 1200px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.article {
+    padding: 30px;
+    width: 800px;
+    padding-left: 40px;
+    border-radius: 6px;
+    background: white;
+}
+
+#logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 40px;
+    margin-left: -20px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 2%;
+    margin-right: 10%;
+}
