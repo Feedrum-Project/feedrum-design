@@ -9,13 +9,13 @@
 }
 
 :root {
-    --main-color: #E0D9E4;
+    --main-color: #d9dae4;
     --text-color: #242424;
-    --bg-color: #E0D9E4;
+    --bg-color: #d9dae4;
 }
 
 body {
-    background-color: #E0D9E4;
+    background-color: #d9dae4;
 }
 
 #pagetop {
@@ -38,7 +38,6 @@ body {
 .sidebar {
     float: right;
     background-color: white;
-    height: 200px;
     padding: 10px;
     width: 24%;
 }
@@ -107,6 +106,6 @@ body {
         color: white;
     }
     .text {
-        color: #E0D9E4;
+        color: #d9dae4;
     }
 }
