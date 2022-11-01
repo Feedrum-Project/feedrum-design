@@ -94,7 +94,7 @@ a:hover {
 }
 
 .item-profile {
-    margin-right: 60px;
+    margin-right: 15px;
     margin-top: 5px;
     float: right;
     transition-duration: 200ms;
@@ -107,7 +107,7 @@ a:hover {
 }
 
 #logo {
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 .pagedown {
@@ -138,7 +138,7 @@ a:hover {
         width: 100%;
     }
     #content {
-        margin-top: 0px;
+        margin-top: 5px;
     }
     .sidebar {
         display: none;
