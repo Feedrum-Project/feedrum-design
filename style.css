@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Exo 2", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -31,7 +31,6 @@ body {
 
 .article {
     background-color: white;
-    height: 100%;
     padding: 10px;
 }
 
@@ -39,7 +38,14 @@ body {
     float: right;
     background-color: white;
     padding: 10px;
-    width: 24%;
+    width: 32%;
+}
+
+.sidebar header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .title {
@@ -50,6 +56,15 @@ body {
 .text {
     padding-left: 20px;
     color: #19181a;
+}
+
+ul li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #232123;
 }
 
 .col-1 {width: 8.33%;}
@@ -85,7 +100,7 @@ body {
 
 @media screen and (min-width: 1200px) {
     #content {
-        width: 1000px;
+        width: 1100px;
     }
 }
 
