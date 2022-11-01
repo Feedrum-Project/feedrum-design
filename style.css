@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Exo 2", sans-serif;
+    font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -19,13 +19,26 @@
     --bg-color: var(--color-bg);
 }
 
+@media screen and (min-width: 800px) {
+    .sidebar {
+        display: hide
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 body {
     background: var(--color-bg);
+    display: inline;
 }
 
 .content {
     margin: auto;
-    width: 1215px;
+    width: 1000px;
     margin-top: 15px;
 }
 
@@ -65,7 +78,6 @@ ul li:hover a {
 
 .right {
     position: absolute;
-    left: 1200px;
     padding: 10px;
     margin-right: 15px;
 }
@@ -83,7 +95,7 @@ ul li:hover a {
     margin-top: 5px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.title {
     margin-bottom: 40px;
     margin-left: -20px;
 }
