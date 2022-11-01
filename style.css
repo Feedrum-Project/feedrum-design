@@ -10,7 +10,7 @@
 
 :root {
     --main-color: #d9dae4;
-    --text-color: #242424;
+    --text-color: #19181a;;
     --bg-color: #d9dae4;
 }
 
@@ -18,53 +18,106 @@ body {
     background-color: #d9dae4;
 }
 
-#pagetop {
+#pagebar {
     width: 100%;
-    height: 75px;
+    height: 55px;
     background-color: #242424;
 }
 
 #content {
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .article {
     background-color: white;
     padding: 10px;
+    padding-bottom: 30px;
 }
 
 .sidebar {
     float: right;
     background-color: white;
     padding: 10px;
-    width: 32%;
+    width: 24%;
+    padding-bottom: 20px;
 }
 
 .sidebar header {
     text-align: center;
     font-size: 26px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .title {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 7px;
 }
 
 .text {
-    padding-left: 20px;
-    color: #19181a;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 ul li {
+    margin-top: 10px;
     padding-left: 15px;
-    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+
+ul hr {
+    color: #edeaea;
 }
 
 a {
     color: #232123;
+}
+a:hover {
+    color: #000000;
+}
+
+.postinfo {
+    height: 30px;
+    width: 100%;
+}
+
+.date {
+    font-size: 15px;
+    float: right;
+    padding: 5px;
+    color: #7a7b87;
+}
+
+.item-profile {
+    margin-right: 60px;
+    margin-top: 5px;
+    float: right;
+    transition-duration: 200ms;
+    opacity: .5;
+}
+
+.item-profile:hover {
+    transition-duration: 200ms;
+    opacity: 1;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+.pagedown {
+    text-align: center;
+    color: #c7c7d0;
+}
+
+.pagedown p {
+    opacity: .5;
+    padding-top: 15px;
 }
 
 .col-1 {width: 8.33%;}
@@ -108,8 +161,8 @@ a {
     body {
         background-color: #232123;
     }
-    #pagetop {
-        background-color: #433e43;
+    #pagebar {
+        background-color: #1b191b;
     }
     .article {
         background-color: #1b191b;
@@ -117,10 +170,16 @@ a {
     .sidebar {
         background-color: #1b191b;
     }
-    .title {
+    .title, .sidebar header {
         color: white;
     }
-    .text {
+    .text, a, p {
         color: #d9dae4;
+    }
+    a:hover {
+        color: #b7b9ca;
+    }
+    ul hr {
+        color: #242424;
     }
 }
