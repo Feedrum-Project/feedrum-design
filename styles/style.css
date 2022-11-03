@@ -31,39 +31,21 @@ body {
     margin-bottom: 30px;
 }
 
-.article {
-    background-color: white;
-    padding: 10px;
-    padding-bottom: 30px;
-}
-
 .sidebar {
     float: right;
     background-color: white;
     padding: 10px;
     width: 24%;
     padding-bottom: 20px;
-}
-
-.sidebar header {
+} .sidebar header {
     text-align: center;
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 20px;
     margin-top: 10px;
-}
-
-.title {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding: 7px;
-}
-
-.text {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 17px;
-}
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(52, 48, 53);
+} 
 
 ul li {
     margin-top: 10px;
@@ -71,29 +53,21 @@ ul li {
     padding-right: 5px;
     padding-bottom: 15px;
     font-size: 19px;
-}
-
-ul hr {
+    border-bottom: 1px solid rgb(114, 111, 111);
+} ul hr {
     color: #edeaea;
 }
 
-a {
-    color: #232123;
-}
-a:hover {
-    color: #000000;
-}
-
-.postinfo {
-    height: 30px;
-    width: 100%;
+ul a {
+    color: #503050;
+} ul a:hover {
+    color: #6d336d;
 }
 
-.date {
-    font-size: 15px;
-    float: right;
-    padding: 5px;
-    color: #7a7b87;
+.text a {
+    color: #773c77;
+} .text a:hover {
+    color: #57285c;
 }
 
 .item-profile {
@@ -102,9 +76,7 @@ a:hover {
     float: right;
     transition-duration: 200ms;
     opacity: .5;
-}
-
-.item-profile:hover {
+} .item-profile:hover {
     transition-duration: 200ms;
     opacity: 1;
 }
@@ -164,25 +136,27 @@ a:hover {
     body {
         background-color: #232123;
     }
-    #pagebar {
-        background-color: #1b191b;
-    }
-    .article {
-        background-color: #1b191b;
-    }
     .sidebar {
         background-color: #1b191b;
     }
-    .title, .sidebar header {
+    .sidebar header {
         color: white;
     }
-    .text, a, p {
+    p, ul a {
         color: #d9dae4;
     }
-    a:hover {
-        color: #b7b9ca;
+    a {
+        color: #f7d4f7;
+    } a:hover, ul a:hover {
+        color: #ebb6eb;
+    }
+    a:hover, ul a:hover {
+        color: #d6bbd6;
     }
     ul hr {
         color: #242424;
+    }
+    #login {
+        background-color: #242424;
     }
 }
