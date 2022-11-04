@@ -24,7 +24,7 @@ body {
     color: #302c30;
 }
 
-.input-area[type=text] {
+.input-area[type=text], .input-area[type=password] {
     transition: 100ms ease-out;
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -36,9 +36,8 @@ body {
     border: 1px solid #afa4af;
 }
 
-.input-area:focus[type=text] {
+.input-area:focus[type=text], .input-area:focus[type=password] {
     transition: 100ms ease-out;
-    padding-left: 8px;
     border: 1px solid #66bbbb;
 
 }
@@ -50,8 +49,8 @@ label {
 }
 
 #remember-me {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: right;
 }
 
@@ -64,7 +63,6 @@ label {
     accent-color: #f3d8ff;
     height: 20px;
     width: 20px;
-    padding-top: 10px;
     margin-right: 10px;
 }
 
@@ -126,15 +124,55 @@ label {
         }
   }
 
-@media (prefers-color-scheme: dark) {
-    .input-area {
-        background-color: #0e0c0e;
-    }
-}
-
 @media screen and (min-width: 1200px) {
     #content {
         transition: 200ms ease-in-out;
         width: 800px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #content {
+        background-color: #1a171a;
+    }
+
+    #login-title, label {
+        color: white;
+    }
+    
+    #remember-me label {
+        color: #bbb7bb;
+    }
+
+    .input-area[type=text], .input-area[type=password] {
+        background-color: #1a171a;
+        color: white;
+        border-color: #302c30;
+    }
+    .input-area:focus[type=text], .input-area:focus[type=password] {
+        border-color: #492e49;
+    }
+
+    #authorization button {
+        box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(0, 0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+    #authorization button {
+        color: rgb(26, 20, 26);
+    }
+
+    #register {
+        background-color: #575257;
+    }
+    #register:hover {
+        background-color: #9fc4c9;
+    }
+
+    #login {
+        background-color: #8f608f;
+    }
+    #login:hover {
+        background-color: #b673b8;
     }
 }
