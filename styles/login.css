@@ -1,0 +1,140 @@
+body {
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-color: #ebd4eb;
+}
+
+#content {
+    transition: 200ms ease-in-out;
+    background-color: white;
+    padding: 60px 40px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-40%, -40%);
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+#login-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #302c30;
+}
+
+.input-area[type=text] {
+    transition: 100ms ease-out;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #afa4af;
+}
+
+.input-area:focus[type=text] {
+    transition: 100ms ease-out;
+    padding-left: 8px;
+    border: 1px solid #66bbbb;
+
+}
+
+label {
+    padding: 10px 10px 10px 0px;
+    display: inline-block;
+    color: #302c30;
+}
+
+#remember-me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#remember-me label {
+    font-size: 14px;
+    color: #575257;
+}
+
+#remember-me input[type=checkbox] {
+    accent-color: #f3d8ff;
+    height: 20px;
+    width: 20px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+.col-75 {
+    width: 75%;
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+#authorization button{
+    border-radius: 12px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    transition: 100ms ease-out;
+    color: #302c30;
+} 
+#authorization button:hover {
+    transition: 100ms ease-out;
+    color: #ffffff;
+}
+
+#register {
+    transition: 600ms ease-out;
+    color: #302c30;
+    background-color: #d1f3f5;
+} #register:hover {
+    transition: 200ms ease-in;
+    background-color: #9fe6e6;
+}
+
+#login {
+    transition: 300ms ease-in-out;
+    background-color: #e4ccf5;
+    float: right;
+} #login:hover {
+    transition: 100ms ease-in;
+    background-color: #c79ee2;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, .input-area[type=submit] {
+        transition: 200ms ease-in-out;
+        width: 100%;
+        margin: 0;
+        }
+  }
+
+@media (prefers-color-scheme: dark) {
+    .input-area {
+        background-color: #0e0c0e;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #content {
+        transition: 200ms ease-in-out;
+        width: 800px;
+    }
+}
