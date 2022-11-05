@@ -12,16 +12,17 @@
     <body>
         <div id="content" class="col-5">
             <div class="row">
-                <h2 id="login-title">Вхід в акаунт</h2>
+                <h2 id="login-title">Реєстрація</h2>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="fname">Email або ім'я</label>
+                    <label for="fname">Ім'я</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" class="input-area" placeholder="Ваша електронна скринька або ім'я..."/>
+                    <input type="text" id="fname" class="input-area" placeholder="Ваше ім'я на сайті..."/>
                 </div>
             </div>
+            <br/>
             <div class="row">
                 <div class="col-25">
                     <label for="fname">Пароль</label>
@@ -31,21 +32,27 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-25">
+                    <label for="fname">Підтвердіть пароль</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="password-repeat" class="input-area" placeholder="Повторіть ваш пароль..."/>
+                </div>
+            </div>
+            <div class="row">
                 <div id="remember-me">
                     <label for="remember-checkbox">Запам'ятай мене</label>
                     <input type="checkbox" id="remember-checkbox" checked="checked"/>
                 </div>
             </div>
             <div id="authorization" class="row">
-                <style> #login { float:right; } </style>
+                <style> #register { float:right; } </style>
+                <button id="register" class="col-25">
+                    Реєстрація
+                </button>
                 <button id="login" class="col-25">
                     Увійти
                 </button>
-                <a href="register.html">
-                    <button id="register" class="col-25">
-                        Реєстрація
-                    </button>
-                </a>
             </div>
         </div>
     </body>

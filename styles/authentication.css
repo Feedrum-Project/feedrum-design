@@ -10,9 +10,9 @@ body {
     padding: 60px 40px;
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
-    -ms-transform: translate(-40%, -40%);
+    -ms-transform: translate(-45%, -45%);
     transform: translate(-50%, -50%);
     border-radius: 4px;
 }
@@ -46,6 +46,7 @@ label {
     padding: 10px 10px 10px 0px;
     display: inline-block;
     color: #302c30;
+    user-select: none;
 }
 
 #remember-me {
@@ -64,6 +65,10 @@ label {
     height: 20px;
     width: 20px;
     margin-right: 10px;
+}
+
+#remember-checkbox input[type=checkbox]:before {
+    background: #302c30;
 }
 
 .col-25 {
@@ -110,7 +115,6 @@ label {
 #login {
     transition: 300ms ease-in-out;
     background-color: #e4ccf5;
-    float: right;
 } #login:hover {
     transition: 100ms ease-in;
     background-color: #c79ee2;
