@@ -67,10 +67,6 @@ label {
     margin-right: 10px;
 }
 
-#remember-checkbox input[type=checkbox]:before {
-    background: #302c30;
-}
-
 .col-25 {
     width: 25%;
     float: left;
@@ -88,7 +84,7 @@ label {
     margin-bottom: 5px;
 }
 
-#authorization button{
+#authorization-login button, #authorization-register button{
     border-radius: 12px;
     margin-top: 10px;
     text-align: center;
@@ -98,26 +94,35 @@ label {
     transition: 100ms ease-out;
     color: #302c30;
 } 
-#authorization button:hover {
+#authorization-login button:hover, #authorization-register button:hover {
     transition: 100ms ease-out;
     color: #ffffff;
 }
 
-#register {
+#authorization-login #register, #authorization-register #login {
     transition: 600ms ease-out;
-    color: #302c30;
-    background-color: #d1f3f5;
-} #register:hover {
+    background-color: #d1f3f515;
+    float: left;
+} #authorization-login #register:hover, #authorization-register #login:hover {
     transition: 200ms ease-in;
-    background-color: #9fe6e6;
+    background-color: #9fe6e644;
 }
 
-#login {
+#authorization-login #login, #authorization-register #register{
     transition: 300ms ease-in-out;
     background-color: #e4ccf5;
-} #login:hover {
+    float: right;
+} #authorization-login #login:hover, #authorization-register #register:hover {
     transition: 100ms ease-in;
     background-color: #c79ee2;
+}
+
+#authenticate-login {
+    display: block;
+}
+
+#authenticate-register {
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -126,6 +131,10 @@ label {
         width: 100%;
         margin: 0;
         }
+    .input-area {
+        transition: 800ms ease-in-out;
+        padding: 24px 0px;
+    }
   }
 
 @media screen and (min-width: 1200px) {
@@ -157,26 +166,27 @@ label {
         border-color: #492e49;
     }
 
-    #authorization button {
+    #authorization-login button, #authorization-register button {
         box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(0, 0, 0, 0),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-        color: white;
     }
-    #authorization button {
-        color: rgb(26, 20, 26);
-    }
-
-    #register {
-        background-color: #575257;
-    }
-    #register:hover {
-        background-color: #9fc4c9;
+    #authorization-login button:hover, #authorization-register button:hover {
+        color: rgb(255, 255, 255);
     }
 
-    #login {
+    #authorization-login #register, #authorization-register #login {
+        color: rgb(155, 155, 155);
+        background-color: #57525760;
+    }
+    #authorization-login #register:hover, #authorization-register #login:hover {
+        color: rgb(255, 255, 255);
+        background-color: #9fc4c94d;
+    }
+
+    #authorization-login #login, #authorization-register #register {
         background-color: #8f608f;
     }
-    #login:hover {
+    #authorization-login #login:hover, #authorization-register #register:hover {
         background-color: #b673b8;
     }
 }
