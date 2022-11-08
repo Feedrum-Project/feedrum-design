@@ -82,8 +82,14 @@ ul a {
     opacity: 1;
 }
 
+.unselectable {
+    user-select: none;
+}
+
 #logo {
     margin-left: 5px;
+    width: 55px;
+    height: 55px
 }
 
 .pagedown {

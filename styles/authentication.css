@@ -5,16 +5,34 @@ body {
 }
 
 #content {
-    transition: 200ms ease-in-out;
     background-color: white;
     padding: 60px 40px;
     margin: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    -ms-transform: translate(-45%, -45%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 4px;
+}
+
+.anim-down-up-down {
+    animation: down-up-down 400ms ease-out;
+}
+
+@keyframes down-up-down {
+    0% {
+        opacity: 0;
+        -ms-transform: translate(-50%, -60%);
+        transform: translate(-50%, -60%);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 #login-title {
@@ -39,7 +57,16 @@ body {
 .input-area:focus[type=text], .input-area:focus[type=password] {
     transition: 100ms ease-out;
     border: 1px solid #66bbbb;
+}
 
+.password-icon {
+    float: right;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    max-height: 32px;
+    top: -35px;
+    left: -12px;
 }
 
 label {
@@ -105,6 +132,7 @@ label {
     float: left;
 } #authorization-login #register:hover, #authorization-register #login:hover {
     transition: 200ms ease-in;
+    color: #504d4d;
     background-color: #9fe6e644;
 }
 
@@ -131,10 +159,6 @@ label {
         width: 100%;
         margin: 0;
         }
-    .input-area {
-        transition: 800ms ease-in-out;
-        padding: 24px 0px;
-    }
   }
 
 @media screen and (min-width: 1200px) {
