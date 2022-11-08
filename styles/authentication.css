@@ -68,6 +68,11 @@ body {
     top: -35px;
     left: -12px;
 }
+.password-icon:active {
+    transition: 200ms;
+    width: 10px;
+    height: 10px;
+}
 
 label {
     padding: 10px 10px 10px 0px;
