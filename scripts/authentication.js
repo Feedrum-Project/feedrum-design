@@ -14,11 +14,21 @@ function ToLogin() {
     register_content.style.display = "none";
 }
 
+function AddClass(ElementClassName, NewClassName) {
+    var elements = document.getElementsByClassName(ElementClassName);
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.remove(NewClassName);
+        void content.offsetHeight;
+        elements[i].classList.add(NewClassName);
+    }
+}
+
 function ShowHidePassword() {
     var login_password_input = document.getElementById("login-password");
     var register_password_input = document.getElementById("register-password");
     var login_password_icon = document.getElementById("login-password-icon");
     var register_password_icon = document.getElementById("register-password-icon");
+    AddClass("password-icon", "password-icon-anim");
     if (login_password_input.type === "password") {
         login_password_input.type = "text";
         register_password_input.type = "text";

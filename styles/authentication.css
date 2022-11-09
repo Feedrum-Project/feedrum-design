@@ -68,11 +68,25 @@ body {
     top: -35px;
     left: -12px;
 }
-.password-icon:active {
-    transition: 200ms;
-    width: 10px;
-    height: 10px;
+.password-icon-anim {
+    animation: resize-small-normal 300ms ease-out;
 }
+
+@keyframes resize-small-normal {
+    0% {
+        -ms-transform: scale(100%, 100%);
+        transform: scale(100%, 100%);
+    }
+    50% {
+        -ms-transform: scale(0%, 0%);
+        transform: scale(0%, 0%);
+    }
+    100% {
+        -ms-transform: scale(100%, 100%);
+        transform: scale(100%, 100%);
+    }
+}
+
 
 label {
     padding: 10px 10px 10px 0px;
