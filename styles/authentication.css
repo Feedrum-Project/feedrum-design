@@ -7,14 +7,13 @@ body {
 #content {
     background-color: white;
     padding: 60px 40px;
-    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    opacity: .85;
+    opacity: .9;
 }
 
 .anim-down-up-down {
@@ -24,20 +23,17 @@ body {
 @keyframes down-up-down {
     0% {
         opacity: 0;
-        -ms-transform: translate(-50%, -60%);
         transform: translate(-50%, -60%);
     }
     75% {
-        opacity: .85;
+        opacity: .9;
     }
     100% {
-        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
 
 #login-title {
-    width: 100%;
     text-align: center;
     margin-bottom: 40px;
     color: #302c30;
@@ -70,18 +66,21 @@ body {
     left: -12px;
 }
 .password-icon-anim {
-    animation: resize-small-normal 333ms ease-out;
+    animation: resize-small-normal 333ms ease-in-out;
 }
 
 @keyframes resize-small-normal {
+    0% {
+        opacity: 0;
+    }
     50% {
         transform: scale(50%, 50%);
     }
     100% {
+        opacity: 1;
         transform: scale(100%, 100%);
     }
 }
-
 
 label {
     padding: 10px 10px 10px 0px;
@@ -91,8 +90,7 @@ label {
 }
 
 #remember-me {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     float: right;
 }
 
@@ -136,16 +134,16 @@ label {
     color: #302c30;
 } 
 #authorization-login button:hover, #authorization-register button:hover {
-    transition: 100ms ease-out;
+    transition: 400ms ease-out;
     color: #ffffff;
 }
 
 #authorization-login #register, #authorization-register #login {
-    transition: 600ms ease-out;
+    transition: 300ms ease-out;
     background-color: #d1f3f515;
     float: left;
 } #authorization-login #register:hover, #authorization-register #login:hover {
-    transition: 200ms ease-in;
+    transition: 400ms ease-in;
     color: #504d4d;
     background-color: #9fe6e644;
 }
@@ -155,7 +153,7 @@ label {
     background-color: #e4ccf5;
     float: right;
 } #authorization-login #login:hover, #authorization-register #register:hover {
-    transition: 100ms ease-in;
+    transition: 300ms ease-in;
     background-color: #c79ee2;
 }
 
