@@ -1,0 +1,47 @@
+.article {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+.text {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+}
+
+.postinfo {
+    height: 30px;
+    width: 100%;
+}
+
+.date p {
+    font-size: 15px;
+    float: right;
+    padding: 5px;
+    color: #7a7b87;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    [id*="article-"] header {
+        color: white;
+    }
+    .article {
+        background-color: #1b191b;
+    }
+    .text {
+        color: #d9dae4;
+    }
+    .text a {
+        color: #f7d4f7;
+    }
+    .title {
+        color: white;
+    }
+}

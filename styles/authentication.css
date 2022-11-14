@@ -106,23 +106,6 @@ label {
     margin-right: 10px;
 }
 
-.col-25 {
-    width: 25%;
-    float: left;
-}
-
-.col-75 {
-    width: 75%;
-    float: right;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 5px;
-}
-
 #authorization-login button, #authorization-register button{
     border-radius: 12px;
     margin-top: 10px;
@@ -164,14 +147,6 @@ label {
 #authenticate-register {
     display: none;
 }
-
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, .input-area[type=submit] {
-        transition: 200ms ease-in-out;
-        width: 100%;
-        margin: 0;
-        }
-  }
 
 @media screen and (min-width: 1200px) {
     #content {

@@ -115,6 +115,23 @@ ul a {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.col-25 {
+    width: 25%;
+    float: left;
+}
+
+.col-75 {
+    width: 75%;
+    float: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 5px;
+}
+
 @media screen and (max-width: 800px) {
     [class*="col-"] {
         width: 100%;
@@ -125,6 +142,10 @@ ul a {
     }
     .sidebar {
         display: none;
+    }
+    .col-25, .col-75, .input-area[type=submit] {
+        transition: 200ms ease-in-out;
+        width: 100%;
     }
 }
 
@@ -143,6 +164,9 @@ ul a {
 }
 
 @media (prefers-color-scheme: dark) {
+    #pagebar {
+        background-color: #1b191b;
+    }
     body {
         background-color: #232123;
     }
