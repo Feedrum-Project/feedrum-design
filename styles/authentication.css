@@ -1,7 +1,6 @@
 body {
-    background-image: url("../images/background.gif");
     background-repeat: repeat;
-    background-color: #ebd4eb;
+    background-color: #afafaf;
 }
 
 #content {
@@ -117,26 +116,26 @@ label {
     color: #302c30;
 } 
 #authorization-login button:hover, #authorization-register button:hover {
-    transition: 400ms ease-out;
+    transition: 200ms ease-out;
     color: #ffffff;
 }
 
 #authorization-login #register, #authorization-register #login {
-    transition: 300ms ease-out;
+    transition: 200ms ease-out;
     background-color: #d1f3f515;
     float: left;
 } #authorization-login #register:hover, #authorization-register #login:hover {
-    transition: 400ms ease-in;
+    transition: 200ms ease-in;
     color: #504d4d;
     background-color: #9fe6e644;
 }
 
 #authorization-login #login, #authorization-register #register{
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
     background-color: #e4ccf5;
     float: right;
 } #authorization-login #login:hover, #authorization-register #register:hover {
-    transition: 300ms ease-in;
+    transition: 200ms ease-in;
     background-color: #c79ee2;
 }
 
@@ -148,14 +147,27 @@ label {
     display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 68rem) {
     #content {
+        transition: 200ms ease-out;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .input-area[type=submit] {
         transition: 200ms ease-in-out;
-        width: 800px;
+        width: 100%;
+    }
+    #content {
+        width: 800px
     }
 }
 
 @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2b2b2b;
+    }
     #content {
         background-color: #1a171a;
     }
@@ -191,7 +203,7 @@ label {
     }
     #authorization-login #register:hover, #authorization-register #login:hover {
         color: rgb(255, 255, 255);
-        background-color: #9fc4c94d;
+        background-color: #bbbbbb4d;
     }
 
     #authorization-login #login, #authorization-register #register {
